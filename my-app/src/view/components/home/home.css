@@ -1,0 +1,129 @@
+#home{
+   background: #0a0f14 linear-gradient(135deg,#1e323c,#0a141e,#0a0f14,#14140a,#260f17,#14140a,#0a0f14,#0a141e,#1e323c);
+   background-size: 400% 400%;
+   animation: 20s ease infinite dynamic-bg;
+}
+
+.bghome-onload{
+    animation: ease 2s bg-flash;
+        /* animation: 1.75s ease home; */
+
+}
+
+@keyframes bg-flash{
+/* 0%, 50% {
+    background: #2e8b57;
+    opacity: 0;
+    border-radius: 4em;
+    pointer-events: none;
+} */
+0% {
+    background: #06b6d4;
+    opacity: 0;
+  border-radius: 20em;
+  pointer-events: none;
+}
+}
+.myname{
+    position: relative;
+    padding: 0 12px;
+white-space: nowrap;
+}
+
+.myname::before{
+content: "Datvt";
+text-align: center;
+    position: absolute;
+    inset: 0;
+    color: #000;
+    background: #66cdaa;
+    font-weight: 400;
+    transform: scaleX(0);
+    transform-origin: right;
+    border-radius: 4px;
+    box-shadow: 0 0 8px teal;
+    transition: background .15s,transform .2s,box-shadow .2s;
+}
+.myname:hover::before{
+    
+    transform: scaleX(1);
+    transform-origin: left;
+}
+a:hover .arrow-down .arrow-1::before,
+a:hover .arrow-down .arrow-1::after,
+a:hover .arrow-down .arrow-2::before,
+a:hover .arrow-down .arrow-2::after{
+    background-color: #88cdaa;
+    filter: drop-shadow(0 0 3px teal);
+}
+.arrow-down{
+    display: inline-block;
+    animation: arrow-down ease 1s infinite;
+}
+.arrow-1,.arrow-2{
+        display: block;
+    height: 35px;
+    width:  35px;
+    position: relative;
+}
+.arrow-1{
+
+    transform: rotate(-45deg);
+}
+.arrow-1::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 7px;
+    background-color: #5f9ea0;
+    border-radius: 999px;
+}
+.arrow-1::after{
+    content: '';
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    bottom: 0;
+     background-color: #5f9ea0;
+    border-radius: 999px;
+}
+.arrow-2{
+
+    transform: rotate(-45deg) translate(8px,-8px);
+
+}
+.arrow-2::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 7px;
+    background-color: #5f9ea0;
+    border-radius: 999px;
+}
+.arrow-2::after{
+    content: '';
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    bottom: 0;
+     background-color: #5f9ea0;
+    border-radius: 999px;
+}
+
+@keyframes arrow-down{
+    0%{
+        transform: translatey(10px);
+    }
+    50%{
+        transform: translatey(-10px);
+    }
+    100%{
+        transform: translatey(10px);
+    }
+}
+
+@keyframes dynamic-bg {
+   50% {
+    background-position: 100% 100%;
+    }
+}

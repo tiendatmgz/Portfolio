@@ -1,0 +1,31 @@
+/* tailwindcss config */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #262626; 
+  border-radius: 999px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
