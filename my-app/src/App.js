@@ -1,5 +1,4 @@
 // import { useState } from 'react';
-import './App.css';
 import Navbar from './view/components/Navbar';
 import Home from './view/components/home/Home';
 import About from './view/components/about/About';
@@ -14,7 +13,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Project/>
+      <Project />
       <Contact />
     </div>
   );

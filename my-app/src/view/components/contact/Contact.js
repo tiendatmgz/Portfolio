@@ -1,5 +1,4 @@
 import React from 'react'
-import './contact.css'
 import NeonTitle from '../layout/NeonTitle'
 import CVpdf from '../../assets/documents/VuTienDat-CV.pdf'
 import reactIcon from '../../assets/image/react.png'
@@ -8,7 +7,7 @@ import jsIcon from '../../assets/image/js.png'
 const Contact = () => {
     return (
         <section id='contact' className='bg-black flex flex-col items-center justify-between  text-lg pt-6  px-6 border-b-4 border-cyan-700 pb-20'>
-            <h1 className='text-5xl font-semibold text-white mt-12 '>Contact me</h1>
+            <h1 className='text-5xl font-semibold text-white mt-24 '>Contact me</h1>
             <p className='my-12 '>You can get in touch with me at <span className='underline decoration-wavy decoration-lime-300'>any time</span>; I'm interested in new opportunities. If you have any questions, don't hesitate to ask me:</p>
             <ul className='contact-box container-shadow list-none  rounded-xl'>
                 <li className='flex'>
@@ -50,7 +49,7 @@ const Contact = () => {
                     <li>
                         <NeonTitle href={CVpdf} target={'_blank'}>
                             <div className='tranform-icon w-14 flex flex-col items-center'>
-                                <i class="fa fa-user-circle"></i>           
+                                <i class="fa fa-user-circle"></i>
                                 <span className='hiden-text invisible text-xs'>CV</span>
                             </div>
                         </NeonTitle>
@@ -61,7 +60,7 @@ const Contact = () => {
                     <li className='flex gap-1 '>
                         <img className='h-7 w-7' src={jsIcon} alt='Tailwind CSS' /><span className='underline decoration-lime-300 decoration-wavy'>Javascript</span>,
                     </li>
-                    
+
                     <li className='flex gap-1 decoration-lime-300 decoration-wavy'>
                         <img className='h-7 w-7' src={reactIcon} alt='React' /><span className='underline decoration-lime-300 decoration-wavy'>React </span>
                     </li>

@@ -10,8 +10,6 @@ const Navbar = () => {
         var scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
         // -----------
-        // var pageHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
-        // let home = document.getElementById("home");
         let about = document.getElementById("about");
         let project = document.getElementById("project");
         let contact = document.getElementById("contact");
@@ -29,11 +27,11 @@ const Navbar = () => {
     }
     let classCss = ' hover-nav-item text-2xl capitalize  flex justify-center items-center gap-2 rounded-full w-full p-2'
     return (
-        <div className=''>
-            <div class=" Scroll-Indicator w-screen h-2  left-0 fixed z-10 ">
-                <div class=" h-2  w-0 " id="myBar"></div>
+        <div >
+            <div className=" Scroll-Indicator w-screen h-2  left-0 fixed z-10 backdrop-blur-xl ">
+                <div id="myBar" className=" h-2  w-0 bg-yellow-400 shadow-xl"></div>
             </div>
-            <nav id='navbar' className='fixed left-0 w-screen z-10 py-5 px-24 mt-2 backdrop-blur-md text-cyan-300' >
+            <nav id='navbar' className='fixed left-0 w-screen z-10 py-5 px-24 mt-2 backdrop-blur-xl text-cyan-300' >
                 <div className='flex gap-4 w-full   '>
                     <a className={(selectedChildIndex === 0 ? 'nav-selected ' : '') + classCss} href='#home'>
                         <i className="  fa-solid fa-house"></i>
