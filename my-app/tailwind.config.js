@@ -7,7 +7,12 @@ module.exports = {
     fontFamily: {
       'Jura': ['Jura', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'bg-gradient-1': 'rgba(19,128,134,1) ',
+        'bg-gradient-2': 'rgba(83,70,102,1)',
+      },
+    },
   },
   plugins: [],
 }

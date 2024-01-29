@@ -6,7 +6,7 @@ import tailwindcssIcon from '../../assets/image/tailwind-css.png'
 import jsIcon from '../../assets/image/js.png'
 const Contact = () => {
     return (
-        <section id='contact' className='bg-black flex flex-col items-center justify-between  text-lg pt-6  px-6 border-b-4 border-cyan-700 pb-20'>
+        <section id='contact' className=' bg-black flex flex-col items-center justify-between  text-lg pt-6  px-6 border-b-4 border-cyan-700 pb-20'>
             <h1 className='text-5xl font-semibold text-white mt-24 '>Contact me</h1>
             <p className='my-12 '>You can get in touch with me at <span className='underline decoration-wavy decoration-lime-300'>any time</span>; I'm interested in new opportunities. If you have any questions, don't hesitate to ask me:</p>
             <ul className='contact-box container-shadow list-none  rounded-xl'>
@@ -29,7 +29,7 @@ const Contact = () => {
 
             {/* {------------------------------------------------------------ } */}
             <div className='border-t border-cyan-700 mt-24 pt-12 w-full flex flex-col items-center justify-center gap-12'>
-                <ul className='flex gap-8'>
+                <ul className='flex flex-wrap gap-8'>
                     <li>
                         <NeonTitle href={'mailto:tiendatyenbai2001@gmail.com'}>
                             <div className='tranform-icon w-14 flex flex-col items-center'>
@@ -55,16 +55,15 @@ const Contact = () => {
                         </NeonTitle>
                     </li>
                 </ul>
-                <ul className='flex gap-3 '>
+                <ul className='flex flex-wrap gap-3 '>
                     Build with:
                     <li className='flex gap-1 '>
-                        <img className='h-7 w-7' src={jsIcon} alt='Tailwind CSS' /><span className='underline decoration-lime-300 decoration-wavy'>Javascript</span>,
+                        <img className='h-7 w-7' src={jsIcon} alt='Tailwind CSS' /><span className='underline decoration-lime-300 decoration-wavy'>Javascript</span>
                     </li>
 
                     <li className='flex gap-1 decoration-lime-300 decoration-wavy'>
                         <img className='h-7 w-7' src={reactIcon} alt='React' /><span className='underline decoration-lime-300 decoration-wavy'>React </span>
                     </li>
-                    and
                     <li className='flex gap-1 '>
                         <img className='h-7 w-7' src={tailwindcssIcon} alt='Tailwind CSS' /><span className='underline decoration-lime-300 decoration-wavy'>Tailwind CSS</span>
                     </li>

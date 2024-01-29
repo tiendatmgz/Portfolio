@@ -5,21 +5,17 @@ import ItemSkillWrapper from '../layout/ItemSkillWrapper'
 import expressLogo from '../../assets/image/express.png'
 import nodejsLogo from '../../assets/image/node-js.png'
 import avatar from '../../assets/image/avartar.jpg'
-import { FaCode } from "react-icons/fa6";
-import { FaFilm } from "react-icons/fa6";
-import { FaMusic } from "react-icons/fa6";
-import { FaGamepad } from "react-icons/fa6";
-import { FaMugHot } from "react-icons/fa6";
-import { FaMapLocationDot } from "react-icons/fa6";
-import { FaMoneyBillWave } from "react-icons/fa6";
-import { FaShuttleSpace, FaDisplay, FaServer, FaListOl, FaDatabase } from "react-icons/fa6";
- 
+import firebase from '../../assets/image/firebase.png'
+import github from '../../assets/image/github.png'
+// import github from '../../assets/image/github.png'
+
+import { FaCode, FaFilm, FaMusic, FaGamepad, FaMugHot, FaMapLocationDot, FaMoneyBillWave, FaShuttleSpace, FaDisplay, FaServer, FaListOl, FaDatabase } from "react-icons/fa6";
 import { FieldsetBig, FieldsetChild, FieldsetNormal } from '../layout/Fieldset'
 
 const About = () => {
     const interestItemStyle = 'flex items-center gap-2 text-xl font-semibold'
     return (
-        <section id='about' className='bg-gradient-to-b from-indigo-950 to-sky-900 flex flex-col  items-center px-4 pb-20  border-b-4 border-cyan-700 '>
+        <section id='about' className='bg-gradient-to-r from-black to-cyan-900 flex flex-col  items-center px-4 pb-20r-b-4 border-cyan-700 py-36'>
             <div id='about-me' className='about-container flex flex-wrap justify-center items-center  gap-8 pt-24' >
                 <div className='avatar'>
                     <img src={avatar} alt='avatar'
@@ -68,12 +64,13 @@ const About = () => {
 
                 {/* front end */}
                 <div id='front-end' className='pt-36'>
-                    <FieldsetBig id={'front-end'} icon={<FaDisplay className='text-3xl'/>} title={"Front-End"} spanAfter={<i class="fa fa-gg"></i>}>
+                    <FieldsetBig id={'front-end'} icon={<FaDisplay className='text-3xl' />} title={"Front-End"} spanAfter={<i class="fa fa-gg"></i>}>
                         <FieldsetChild title={"Template"}>
                             <ItemSkillWrapper logoPath={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'} iName={'HTML5'} />
                         </FieldsetChild>
                         <FieldsetChild title={"Style"}>
                             <ItemSkillWrapper logoPath={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'} iName={'CSS'} />
+                            <ItemSkillWrapper logoPath={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg'} iName={'SASS'} />
                             <ItemSkillWrapper logoPath={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg'} iName={'Tailwind CSS'} />
                         </FieldsetChild>
                         <FieldsetChild title={"Programming"}>
@@ -86,7 +83,7 @@ const About = () => {
                 </div>
                 {/* backend */}
                 <div id='back-end' className='pt-36'>
-                    <FieldsetBig id={'back-end'} icon={<FaServer className='text-3xl'/>} title={"Back-End"} spanAfter={<i class="fa fa-gg"></i>}>
+                    <FieldsetBig id={'back-end'} icon={<FaServer className='text-3xl' />} title={"Back-End"} spanAfter={<i class="fa fa-gg"></i>}>
                         <ItemSkillWrapper logoPath={nodejsLogo} iName={'Node.js'} />
                         <ItemSkillWrapper logoPath={expressLogo} iName={'Express'} />
                         <FieldsetChild icon={<FaDatabase />} title={"Database"}>
@@ -98,15 +95,14 @@ const About = () => {
 
                 {/* Communications */}
                 <div id='other' className='pt-36'>
-                    <FieldsetBig id={'other'} icon={<FaListOl className='text-3xl'/>} title={"Other"} spanAfter={<i class="fa fa-gg"></i>}>
+                    <FieldsetBig id={'other'} icon={<FaListOl className='text-3xl' />} title={"Other"} spanAfter={<i class="fa fa-gg"></i>}>
+                        <ItemSkillWrapper logoPath={firebase} iName={'Firebase'} />
+                        <ItemSkillWrapper logoPath={github} iName={'Github'} />
+                        <ItemSkillWrapper logoPath={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'} iName={'Git'} />
                         <ItemSkillWrapper logoPath={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg'} iName={'Docker'} />
-                        <ItemSkillWrapper logoPath={'https://wikiwandv2-19431.kxcdn.com/_next/image?url=https:%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fb5%2FDBeaver_logo.svg%2F1500px-DBeaver_logo.svg.png&w=828&q=50'} iName={'Dbeaver'} />
+                        {/* <ItemSkillWrapper logoPath={'https://wikiwandv2-19431.kxcdn.com/_next/image?url=https:%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fb5%2FDBeaver_logo.svg%2F1500px-DBeaver_logo.svg.png&w=828&q=50'} iName={'Dbeaver'} /> */}
                     </FieldsetBig>
                 </div>
-
-
-
-
             </div>
         </section>
     )

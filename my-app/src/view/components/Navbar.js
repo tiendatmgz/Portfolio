@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import logo from '../assets/image/TIENDAT-MGZ-logo1.png'
 
 const Navbar = () => {
     const [selectedChildIndex, setSelectedChildIndex] = useState(0);
@@ -31,7 +32,8 @@ const Navbar = () => {
             <div className=" Scroll-Indicator w-screen h-2  left-0 fixed z-10 backdrop-blur-xl ">
                 <div id="myBar" className=" h-2  w-0 bg-yellow-400 shadow-xl"></div>
             </div>
-            <nav id='navbar' className='fixed left-0 w-screen z-10 py-5 px-24 mt-2 backdrop-blur-xl text-cyan-300' >
+            <nav id='navbar' className='fixed flex gap-8 left-0 w-screen z-10 py-5 px-24 mt-2 backdrop-blur-xl text-cyan-300' >
+                <img src={logo} alt='logo' className='w-16 rounded-full border-4 border-dashed '/>
                 <div className='flex gap-4 w-full   '>
                     <a className={(selectedChildIndex === 0 ? 'nav-selected ' : '') + classCss} href='#home'>
                         <i className="  fa-solid fa-house"></i>
@@ -56,5 +58,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-
