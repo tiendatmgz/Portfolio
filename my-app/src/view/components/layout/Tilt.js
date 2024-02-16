@@ -6,9 +6,7 @@ const Tiltname = () => {
     return (
         <div className=' overflow-hidden border-b-4 border-cyan-700'>
             <Tilt className='w-full flex justify-center'>
-                <img src={logo} style={{
-                    height: '600px'
-                }} />
+                <img src={logo} alt='logo' className='max-h-[600px]' />
             </Tilt>
         </div>
     )

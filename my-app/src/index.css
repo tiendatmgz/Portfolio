@@ -105,29 +105,6 @@
   background-color: rgba(6, 181, 212, 0.2);
 }
 
-/* .project */
-/* #project {
-  background: #0a0f14 linear-gradient(135deg, #192328, #0a0f14);
-} */
-
-figure > img {
-  transition: 0.4s;
-}
-figure:hover > img {
-  filter: blur(16px);
-  transition: 0.4s;
-  -webkit-filter: blur(16px);
-}
-figure:hover > figcaption {
-  opacity: 1;
-  transform: scale(1);
-}
-figcaption {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: 0.4s ease;
-  transform-origin: bottom;
-}
 
 /* home */
 #home {
@@ -168,7 +145,7 @@ figcaption {
 }
 
 .myname::before {
-  content: "";
+  content: "1231";
   text-align: center;
   position: absolute;
   inset: 0;
@@ -327,5 +304,7 @@ li:hover .icon-hover-moveup {
 .about-me-p {
   margin: 1.2rem 0;
 }
+
+
 
 /* ---------- */
