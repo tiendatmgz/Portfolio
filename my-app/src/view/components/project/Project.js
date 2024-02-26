@@ -40,7 +40,7 @@ const Project = () => {
                     name={'My Portfolio'}
                     imgPath={portfolio}
                     skillList={['Javascript', 'React', 'TailwindCSS']}
-                    webLink={'https://dat-portfolio-5b957.web.app/'}
+                    webLink={'https://dat-portfolio-5b957.firebaseapp.com/'}
                     sourceLink={'https://github.com/tiendatmgz/Portfolio'}
                 />
                 <FigureBox
