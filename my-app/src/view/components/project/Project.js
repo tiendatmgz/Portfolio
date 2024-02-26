@@ -1,6 +1,7 @@
 import React from 'react'
 import portfolio from '../../assets/image/portfolio.png'
 import dsuit from '../../assets/image/Dsuit.png'
+import pokemon from '../../assets/image/pokemon-library.png'
 // import NeonTitle from '../layout/NeonTitle'
 
 function FigureBox({ name, skillList, sourceLink, webLink, imgPath }) {
@@ -12,7 +13,7 @@ function FigureBox({ name, skillList, sourceLink, webLink, imgPath }) {
                     <h1 className=' text-xl md:text-3xl lg:text-5xl font-semibold text-yellow-400'>{name}</h1>
                     <ul className='flex gap-4 flex-wrap justify-center underline decoration-wavy decoration-lime-300'>
                         {skillList.map(i => {
-                            return <li key={i} className='text-white'>{i},</li>
+                            return <li key={i} className='text-white'>{i}</li>
                         })}
                     </ul>
                     <div className='w-full flex items-center justify-evenly my-6 text-yellow-500'>
@@ -41,6 +42,13 @@ const Project = () => {
                     skillList={['Javascript', 'React', 'TailwindCSS']}
                     webLink={'https://dat-portfolio-5b957.web.app/'}
                     sourceLink={'https://github.com/tiendatmgz/Portfolio'}
+                />
+                <FigureBox
+                    name={'Pokemon Library'}
+                    imgPath={pokemon}
+                    skillList={['Javascript', 'React', 'TailwindCSS', 'RESTful API']}
+                    webLink={'https://pokemon-library-fe914.web.app/'}
+                    sourceLink={'https://github.com/tiendatmgz/pokemon_library'}
                 />
                 <FigureBox
                     name={'D-suit E-Comm'}
